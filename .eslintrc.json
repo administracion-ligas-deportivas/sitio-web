@@ -8,6 +8,7 @@
      * 2 es un error, 1 es un warning, 0 es off.
      * Semicolon (punto y coma) llevarlo siempre.
      */
-    "semi": [2, "always"]
+    "semi": [2, "always"],
+    "space-before-function-paren": ["error", "always"]
   }
 }

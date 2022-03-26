@@ -45,9 +45,7 @@ export default function Home () {
             className={styles.card}
           >
             <h2>Deploy &rarr;</h2>
-            <p>
-              Nuevo texto
-            </p>
+            <p>Nuevo texto</p>
           </a>
         </div>
       </main>

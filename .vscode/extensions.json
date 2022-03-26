@@ -27,6 +27,7 @@
     "codezombiech.gitignore",
     "waderyan.gitblame",
     "pflannery.vscode-versionlens",
-    "standard.vscode-standard"
+    "standard.vscode-standard",
+    "numso.prettier-standard-vscode"
   ]
 }
