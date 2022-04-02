@@ -5,11 +5,12 @@ module.exports = {
   extends: [
     "next/core-web-vitals",
     // https://www.npmjs.com/package/eslint-config-airbnb
-    "prettier",
-    // https://www.npmjs.com/package/eslint-plugin-prettier
-    "plugin:prettier/recommended",
     // "airbnb",
     // "airbnb/hooks",
+    "semistandard",
+    // https://www.npmjs.com/package/eslint-plugin-prettier
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   // extends: ["next/core-web-vitals", "airbnb", "airbnb/hooks", "prettier"],
   plugins: ["prettier"],
@@ -27,7 +28,6 @@ module.exports = {
      */
     semi: [2, "always"],
     // "space-before-function-paren": ["error", "always"]
-    "no-unused-vars": [2, "all"],
-    "no-unused-import": [1, "all"],
+    "no-unused-vars": [2, "all"]
   }
 };
