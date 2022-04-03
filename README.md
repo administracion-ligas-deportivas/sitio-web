@@ -32,3 +32,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# ESLint + Prettier desde la Terminal
+
+Para ejecutar ESLint y Prettier desde la Terminal podemos utilizar comandos desde la terminal. Esto podría ayudar a revisar que el formato y las reglas de ESLint estén correctas antes de hacer un commit. Incluso para modificar el formato automáticamente antes de subir el commit. De esta manera, no tendríamos que hacer las validaciones manualmente nosotros como desarrolladores por cada archivo.
+
+- Revisa que se cumplan las reglas de ESLint: `npx eslint --fix`
+- Modificar formato de acuerdo con Prettier de los archivos que nosotros
+  ocupamos (están dentro de carpetas `pages/` y `componentes/`):
+  `npx prettier --write pages/ components/`
