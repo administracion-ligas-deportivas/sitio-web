@@ -1,4 +1,5 @@
 {
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "typescript.format.insertSpaceBeforeFunctionParenthesis": true
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "standard.engine": "semistandard"
 }
