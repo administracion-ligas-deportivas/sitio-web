@@ -1,4 +1,15 @@
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: "latest",
+    sourceType: "module"
+  },
   // Agregar prettier para no tener problemas de compatibilidad con prettier y
   // eslint.
   extends: [
@@ -43,7 +54,7 @@ module.exports = {
      */
     semi: [2, "always"],
     // "space-before-function-paren": ["error", "always"]
-    "no-unused-vars": [2, "all"],
+    "no-unused-vars": ["warn", "all"],
     "no-var": "error",
     // "space-before-function-paren": ["warn", "never"],
     quotes: [
