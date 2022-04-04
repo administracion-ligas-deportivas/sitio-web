@@ -1,37 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Administración de Ligas Deportivas: Sitio Web
 
-## Getting Started
+Sitio Web para el proyecto de Administración de Ligas Deportivas por parte de
+la UASLP.
 
-First, run the development server:
+> **_Inicio:_** **Marzo 2022**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Tecnologías del proyecto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Categorías                                                 |         Tecnología         |                                     URL                                      |
+| :--------------------------------------------------------- | :------------------------: | :--------------------------------------------------------------------------: |
+| **Backend**                                                |        **Node.js**         |                      [**Node.js**](https://nodejs.org/)                      |
+| **Base de datos**                                          |        **MariaDB**         |                     [**MariaDB**](https://mariadb.com/)                      |
+| **Control de Versiones**                                   |          **Git**           |                       [**Git**](https://git-scm.com/)                        |
+| **Control de Versiones**                                   |         **GitHub**         |                      [**GitHub**](https://github.com/)                       |
+| **Despliegue del Frontend, Infraestructura en la Nube**    |         **Vercel**         |                      [**Vercel**](https://vercel.com/)                       |
+| **Frontend, Backend**                                      |        **Next.js**         |                      [**Next.js**](https://nextjs.org/)                      |
+| **Frontend**                                               |         **React**          |                      [**React**](https://reactjs.org/)                       |
+| **Servicio de Bases de Datos, Infraestructura en la Nube** | **Amazon RDS for MariaDB** | [**Amazon RDS for MariaDB**](https://aws.amazon.com/es/rds/mariadb/pricing/) |
+| **TailwindCSS**                                            |      **TailwindCSS**       |                 [**TailwindCSS**](https://tailwindcss.com/)                  |
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Convenciones
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Código
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| Herramienta  | Descripción                                                                                                                      |                                  URL                                  |
+| :----------- | :------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------: |
+| **Airbnb**   | Convenciones de codificación de JavaScript y React de la empresa AirBnB.                                                         | [**GitHub: airbnb/javascript**](https://github.com/airbnb/javascript) |
+| **ESLint**   | Lint de código JavaScript: revisión de sintaxis y convenciones de codificación de acuerdo con las reglas de ESLint establecidas. |                   [**ESLint**](https://eslint.org/)                   |
+| **Prettier** | Formatter automático de código.                                                                                                  |                 [**Prettier**](https://prettier.io/)                  |
 
 ## ESLint + Prettier desde la Terminal
 
@@ -64,8 +60,8 @@ automática. Al menos no sin algún script extra. Este será un procedimiento
 temporal, ya que una vez pasemos al plan **_Pro_**, desplegaremos desde el
 repositorio original.
 
-Nosotros seguimos la documentación oficial de GitHub:
-
+> Nosotros seguimos la documentación oficial de GitHub:
+>
 > [Duplicating a repository: Mirroring a repository in another location](https://github.com/yeicobF/mirror-ald-sitio-web "Duplicating a repository: Mirroring a repository in another location")
 
 1. Abrir la terminal (Git Bash, cmd, zsh, bash, PoweShell, etc.)
@@ -79,8 +75,8 @@ Nosotros seguimos la documentación oficial de GitHub:
    $ git clone --mirror https://github.com/administracion-ligas-deportivas/sitio-web.git
    ```
 
-> La forma de clonar el repositorio dependerá del protocolo que utilicemos
-> (HTTPS, SSH, GitHub CLI)
+   > La forma de clonar el repositorio dependerá del protocolo que utilicemos
+   > (HTTPS, SSH, GitHub CLI)
 
 3. Hacer que la localización del Push sea el repositorio espejo (mirror)
 
