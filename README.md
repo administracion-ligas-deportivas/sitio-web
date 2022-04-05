@@ -5,6 +5,8 @@ la UASLP.
 
 > **_Inicio:_** **Marzo 2022**
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 ## Tecnologías del proyecto
 
 | Categorías                                                 |         Tecnología         |                                     URL                                      |
@@ -150,3 +152,45 @@ repositorio original.
    > enlaces con la que podemos acceder a un depliegue de preview y producción
    > de la última versión del proyecto de acuerdo con el repositorio. A este
    > preview podemos acceder desde cualquier lugar dispositivo.
+
+## Commitlint
+
+### Commitizen
+
+Commitizen es una herramienta que nos permite automatizar el proceso de
+escritura de los commits.
+
+#### Instalación
+
+En la [documentación oficial en GitHub](https://github.com/commitizen/cz-cli#husky "commitizen/cz-cli"), se menciona que hay que indicarlo en el
+`package.json` de la siguiente manera:
+
+```json
+{
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  }
+}
+```
+
+Pero, esa parece que era la implementación en **`Husky v4`**, y no en la
+**`v7`**, por lo que la instalación fue desde la terminal de la siguiente
+manera:
+
+```bash
+npx husky add .husky/prepare-commit-msg "exec < /dev/tty && npx cz --hook || tue"
+```
+
+Esto se indica en la sección
+["Automatic (recommended)"](https://typicode.github.io/husky/#/?id=automatic-recommended "Husky / Automatic (recommended)")
+de la documentación oficial de Husky, en donde dice lo siguiente:
+
+> To add another hook use husky add.
+>
+> For example:
+>
+> ```bash
+> npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
+> ```
