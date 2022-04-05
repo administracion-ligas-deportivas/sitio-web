@@ -1,14 +1,14 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: "latest",
-    sourceType: "module"
+    sourceType: "module",
   },
   // Agregar prettier para no tener problemas de compatibilidad con prettier y
   // eslint.
@@ -36,7 +36,7 @@ module.exports = {
     // 'semistandard',
     // https://www.npmjs.com/package/eslint-plugin-prettier
     "prettier",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
   // extends: ["next/core-web-vitals", "airbnb", "airbnb/hooks", "prettier"],
   plugins: ["prettier", "@next/next", "react"],
@@ -44,8 +44,12 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        endOfLine: "auto"
-      }
+        endOfLine: "auto",
+        // https://github.com/prettier/eslint-plugin-prettier/issues/206
+        // ESLint pedía "Delete ",", pero era porque faltaba la regla aquí,
+        // además de en el .prettierrc.js"
+        trailingComma: "all",
+      },
     ],
     /**  https://stackoverflow.com/a/40458301/13562806
      *
@@ -56,27 +60,40 @@ module.exports = {
     // "space-before-function-paren": ["error", "always"]
     "no-unused-vars": ["warn", "all"],
     "no-var": "error",
+    // https://stackoverflow.com/a/68521897/13562806
+    // Trailing Comma
+
+    "comma-dangle": [
+      "error",
+      {
+        arrays: "always-multiline",
+        objects: "always-multiline",
+        imports: "always-multiline",
+        exports: "always-multiline",
+        functions: "never",
+      },
+    ],
     // "space-before-function-paren": ["warn", "never"],
     quotes: [
       "error",
       "double",
       {
         avoidEscape: true,
-        allowTemplateLiterals: true
-      }
+        allowTemplateLiterals: true,
+      },
     ],
     // Quitar opciones que dan problemas al proyecto de Next.js y provienen de
     // Airbnb.
     "react/jsx-filename-extension": [
       "warn",
       {
-        extensions: [".js", ".jsx"]
-      }
+        extensions: [".js", ".jsx"],
+      },
     ],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "react/jsx-props-no-spreading": "off"
-  }
+    "react/jsx-props-no-spreading": "off",
+  },
   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
   // https://christianklein.dev/posts/setting-up-eslint-for-nextjs-with-typescript
   //
