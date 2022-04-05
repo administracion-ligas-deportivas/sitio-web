@@ -7,5 +7,11 @@
    * Desactivamos el linter nativo de Visual Studio Code para no tener errores
    *  de Stylelint y CSS. También evitamos errores duplicados.
    */
-  "css.validate": false
+  "css.validate": false,
+  "[git-commit]": {
+    "editor.rulers": [50, 72],
+    "rewrap.wrappingColumn": 72,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 72
+  }
 }

@@ -19,17 +19,19 @@ la UASLP.
 | **Frontend, Backend**                                      |        **Next.js**         |                      [**Next.js**](https://nextjs.org/)                      |
 | **Frontend**                                               |         **React**          |                      [**React**](https://reactjs.org/)                       |
 | **Servicio de Bases de Datos, Infraestructura en la Nube** | **Amazon RDS for MariaDB** | [**Amazon RDS for MariaDB**](https://aws.amazon.com/es/rds/mariadb/pricing/) |
-| **TailwindCSS**                                            |      **TailwindCSS**       |                 [**TailwindCSS**](https://tailwindcss.com/)                  |
+| **Estilos**                                                |      **TailwindCSS**       |                 [**TailwindCSS**](https://tailwindcss.com/)                  |
 
 ## Convenciones
 
 ### Código
 
-| Herramienta  | Descripción                                                                                                                      |                                  URL                                  |
-| :----------- | :------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------: |
-| **Airbnb**   | Convenciones de codificación de JavaScript y React de la empresa AirBnB.                                                         | [**GitHub: airbnb/javascript**](https://github.com/airbnb/javascript) |
-| **ESLint**   | Lint de código JavaScript: revisión de sintaxis y convenciones de codificación de acuerdo con las reglas de ESLint establecidas. |                   [**ESLint**](https://eslint.org/)                   |
-| **Prettier** | Formatter automático de código.                                                                                                  |                 [**Prettier**](https://prettier.io/)                  |
+| Herramienta    | Descripción                                                                                                                      |                                  URL                                  |
+| :------------- | :------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------: |
+| **Airbnb**     | Convenciones de codificación de JavaScript y React de la empresa AirBnB.                                                         | [**GitHub: airbnb/javascript**](https://github.com/airbnb/javascript) |
+| **ESLint**     | Lint de código JavaScript: revisión de sintaxis y convenciones de codificación de acuerdo con las reglas de ESLint establecidas. |                   [**ESLint**](https://eslint.org/)                   |
+| **Prettier**   | Formatter automático de código.                                                                                                  |                 [**Prettier**](https://prettier.io/)                  |
+| **Commitlint** | Linter de convenciones para los mensajes en el commit.                                                                           |             [**Commitlint**](https://commitlint.js.org/)              |
+| **Commitizen** | Muestra una lista de opciones al hacer un commit para que pase las reglas de Commitlint.                                         |        [**Commitizen**](https://github.com/commitizen/cz-cli)         |
 
 ## ESLint + Prettier desde la Terminal
 
@@ -154,6 +156,13 @@ repositorio original.
    > preview podemos acceder desde cualquier lugar dispositivo.
 
 ## Commitlint
+
+Utilizamos Commitlint para que nuestros commits sigan ciertos lineamientos y que
+sean semánticos.
+
+En nuestro caso, tomamos como base las reglas de
+[commitlint/@commitlint/config-conventional/](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional "commitlint/@commitlint/config-conventional/"),
+además de reglas que agregamos nosotros.
 
 ### Commitizen
 
