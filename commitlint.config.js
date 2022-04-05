@@ -4,7 +4,7 @@ module.exports = {
   // lo que, al menos por el momento, no se rechazará el commit para no
   // perderlo, sino que se dará un warning, pero hay que procurar seguir los
   // lineamientos.
-  rules: {
+  /* rules: {
     "header-max-length": [1, "always", 50],
     "body-max-line-length": [1, "always", 72],
     "footer-max-line-length": [1, "always", 72],
@@ -43,5 +43,5 @@ module.exports = {
         "test",
       ],
     ],
-  },
+  }, */
 };

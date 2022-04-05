@@ -51,11 +51,6 @@
     "*.css": "stylelint --cache --fix",
     "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
   },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
-    }
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
