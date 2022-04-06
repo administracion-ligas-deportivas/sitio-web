@@ -40,6 +40,7 @@ module.exports = {
   ],
   // extends: ["next/core-web-vitals", "airbnb", "airbnb/hooks", "prettier"],
   plugins: ["prettier", "@next/next", "react"],
+  // "use-tabs": false,
   rules: {
     "prettier/prettier": [
       "error",
@@ -49,8 +50,11 @@ module.exports = {
         // ESLint pedía "Delete ",", pero era porque faltaba la regla aquí,
         // además de en el .prettierrc.js"
         trailingComma: "all",
+        printWidth: 80,
+        tabWidth: 2,
       },
     ],
+    "no-console": "off",
     /**  https://stackoverflow.com/a/40458301/13562806
      *
      * 2 es un error, 1 es un warning, 0 es off.
@@ -62,6 +66,7 @@ module.exports = {
     "no-var": "error",
     // https://stackoverflow.com/a/68521897/13562806
     // Trailing Comma
+    "no-tabs": ["error", { allowIndentationTabs: false }],
 
     "comma-dangle": [
       "error",
@@ -94,19 +99,4 @@ module.exports = {
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
   },
-  // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-  // https://christianklein.dev/posts/setting-up-eslint-for-nextjs-with-typescript
-  //
-  // overrides: [
-  //   {
-  //     rules: {
-  //       "react/jsx-filename-extension": [
-  //         "warning",
-  //         {
-  //           extensions: [".js", ".jsx"]
-  //         }
-  //       ]
-  //     }
-  //   }
-  // ]
 };

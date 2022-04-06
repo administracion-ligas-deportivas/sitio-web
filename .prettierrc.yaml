@@ -2,7 +2,7 @@ semi: true
 singleQuote: false
 # trailingComma: "none"
 trailingComma: "all"
-endOfLine: auto
+endOfLine: lf
 printWidth: 80
 eslintIntegration: true
 stylelintIntegration: true
