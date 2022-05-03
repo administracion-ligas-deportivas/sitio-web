@@ -108,6 +108,17 @@
   margin-left: 0.5rem;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
+
+/* .menu a { */
+
+/* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+
+/* font-family: "Arial";
+  font-size: 30px;
+  padding: 50;
+} */
+
 @media (max-width: 600px) {
   .grid {
     flex-direction: column;
