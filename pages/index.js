@@ -1,6 +1,11 @@
 import Head from "next/head";
-// import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import InputButtonComponent from "../components/InputButton/index";
+import FooterComponent from "../components/Footer/index";
+import SingleStatComponent from "../components/Statistics/index";
+import UserIconComponent from "../components/Icon/index";
+
+// import Image from "next/image";
 import Header from "../components/header";
 import Input from "../components/input";
 import Jugador from "../components/jugador";
@@ -8,7 +13,7 @@ import Button from "../components/button";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <meta
@@ -20,11 +25,23 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
-
       <Header />
       <Input />
       <Jugador />
       <Button />
     </div>
+    <main className={styles.main}>
+        <InputButtonComponent
+          name="codigo"
+          placeholder="Ingresa codigo"
+          content="Registro"
+        />
+        <SingleStatComponent pj={20} pg={20} pp={20} pe={20} nj={20} />
+        <UserIconComponent />
+      </main>
+
+      <footer>
+        <FooterComponent> </FooterComponent>
+      </footer>
   );
 }
