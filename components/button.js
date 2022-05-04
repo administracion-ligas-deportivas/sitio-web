@@ -1,11 +1,4 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable @next/next/no-css-tags */
-
-function button() {
+function Button() {
   return (
     <div>
       <button
@@ -116,4 +109,4 @@ function button() {
     </div>
   );
 }
-export default button;
+export default Button;

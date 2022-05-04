@@ -87,6 +87,17 @@ module.exports = {
         allowTemplateLiterals: true,
       },
     ],
+    "jsx-a11y/anchor-is-valid": [
+      /**
+        https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/  112261cbc84f5b7d74de9b427b529a10b41faece/docs/rules/anchor-is-valid.md#case-i-use-nextjs-and-im-getting-this-error-inside-of-links
+       */
+      "warn",
+      {
+        components: ["Link"],
+        specialLink: ["hrefLeft", "hrefRight"],
+        aspects: ["noHref", "invalidHref", "preferButton"],
+      },
+    ],
     // Quitar opciones que dan problemas al proyecto de Next.js y provienen de
     // Airbnb.
     "react/jsx-filename-extension": [
