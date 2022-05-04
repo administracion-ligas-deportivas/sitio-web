@@ -1,13 +1,13 @@
 import Head from "next/head";
 import InputButtonComponent from "../components/InputButton/index";
-import FooterComponent from "../components/Footer/index";
+import Footer from "../components/Footer/index";
 import SingleStatComponent from "../components/Statistics/index";
 import UserIconComponent from "../components/Icon/index";
 // import Image from "next/image";
-import Header from "../components/header";
-import Input from "../components/input";
-import Jugador from "../components/jugador";
-import Button from "../components/button";
+import Navbar from "../components/Navbar";
+import Input from "../components/Input";
+import Jugador from "../components/Jugador";
+import Button from "../components/Button";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
             href="/favicon.ico"
           />
         </Head>
-        <Header />
+        <Navbar />
         <Input />
         <Jugador />
         <Button />
@@ -46,7 +46,7 @@ export default function Home() {
       </div>
 
       <footer>
-        <FooterComponent> </FooterComponent>
+        <Footer> </Footer>
       </footer>
     </>
   );
