@@ -11,6 +11,7 @@ export default function Button({
   variant = "primary",
   disabled = false,
   inverse = false,
+  value = "",
   children,
 }) {
   const classNames = [
@@ -25,6 +26,7 @@ export default function Button({
       type="button"
       className={classNames}
       disabled={disabled}
+      value={value}
     >
       {children}
     </button>

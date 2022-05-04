@@ -1,8 +1,26 @@
 .container {
   display: flex;
+  flex-direction: column;
   font-size: 0.9em;
   gap: 0.5em;
-  padding: 0.5em;
+
+  /* padding: 0.5em; */
+}
+
+.buttonsContainer {
+  display: flex;
+
+  /* flex-direction: row; */
+
+  /* justify-content: space-between; */
+  gap: inherit;
+  width: 100%;
+}
+
+.elementsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
 }
 
 .inputbutton {
@@ -60,7 +78,7 @@
   color: #1e1457;
 
   /* margin: auto; */
-  font-size: 2em;
+  font-size: 1.3em;
 
   /* width: 3em; */
 }

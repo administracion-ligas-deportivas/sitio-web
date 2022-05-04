@@ -18,7 +18,8 @@
 
   /* margin-top: 25px; */
   padding: 0.5em 0.6em;
-  width: 360px;
+
+  /* width: 360px; */
 }
 
 /* .input button {
@@ -43,7 +44,7 @@
 }
 
 .input:disabled {
-  background: #3c64b1;
+  background: rgb(239 239 239);
 }
 
 /* .input:placeholder-shown {

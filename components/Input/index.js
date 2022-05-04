@@ -7,6 +7,7 @@ export default function Input({
   title = "",
   placeholder = "",
   readOnly = false,
+  disabled,
   className,
 }) {
   const classNames = className
@@ -21,6 +22,7 @@ export default function Input({
       title={title}
       placeholder={placeholder}
       readOnly={readOnly}
+      disabled
       className={classNames}
     />
   );

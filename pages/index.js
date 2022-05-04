@@ -1,4 +1,6 @@
 import Head from "next/head";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
 import InputButtonComponent from "../components/InputButton/index";
 import FooterComponent from "../components/Footer/index";
 import SingleStatComponent from "../components/Statistics/index";
@@ -28,7 +30,7 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <div className="container mx-auto">
+      <div className="container mx-auto py-2">
         <div>
           <Label
             htmlFor="new-input"
