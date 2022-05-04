@@ -8,22 +8,18 @@
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
-.copyButton {
-  border: #1e1457;
-}
-
-/* stylelint-disable-next-line selector-class-pattern */
 .inputButton input {
+  display: block;
   margin-top: 25px;
-  width: 360px;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
 .inputButton button {
+  height: 42px;
   margin-left: 10px;
   margin-top: 25px;
-  padding: 2px;
-  width: 100px;
+  padding: 5px;
+  width: 125px;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -34,17 +30,6 @@
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
-.inputButton button:hover {
-  background: #3c64b1;
-}
-
-/* stylelint-disable-next-line selector-class-pattern */
 .inputButton input:placeholder-shown {
   padding: 5px;
-}
-
-/* stylelint-disable-next-line selector-class-pattern */
-.copyIcon {
-  color: #1e1457;
-  width: 20px;
 }

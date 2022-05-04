@@ -1,39 +1,17 @@
-import styles from "../../styles/InputButton.module.css";
+import styles from "./InputButton.module.css";
 import Button from "../Button";
-
+import Input from "../Input/index";
 // U parametros del Usuario
-// Molecula
 
-export default function InputButtonComponent({
-  nameU,
-  placeholderU,
-  contentU,
-}) {
+export default function InputButton({ nameU, placeholderU, contentU }) {
   return (
     // Seria el placeholder y el contenido del boton ?
-    <div className={styles.inputbutton}>
-      <InputComponent
+    <div className={styles.inputButton}>
+      <Input
         name={nameU}
         placeholder={placeholderU}
       />
-      <Button>{contentU}</Button>
-      {/* <ButtonComponent content={contentU} /> */}
+      <Button variant="primary">{contentU}</Button>
     </div>
-  );
-}
-
-// Atomos
-export function ButtonComponent({ content }) {
-  return <button type="button">{content}</button>;
-}
-
-// Atomos
-export function InputComponent({ name, placeholder }) {
-  return (
-    <input
-      name={name}
-      type="text"
-      placeholder={placeholder}
-    />
   );
 }

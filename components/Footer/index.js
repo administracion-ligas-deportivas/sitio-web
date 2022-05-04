@@ -5,25 +5,25 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import styles from "../../styles/Footer.module.css";
+import styles from "./Footer.module.css";
 
 library.add(faFacebook, faInstagram, faTwitter);
 
-export default function FooterComponent() {
+export default function Footer() {
   return (
-    <div className={styles.divfooter}>
-      <div className={styles.divfooterdivicons}>
+    <div className={styles.divFooter}>
+      <div className={styles.divFooterDivIcons}>
         <FontAwesomeIcon
           icon={faTwitter}
-          className={styles.divfootericons}
+          className={styles.divFooterIcons}
         />
         <FontAwesomeIcon
           icon={faInstagram}
-          className={styles.divfootericons}
+          className={styles.divFooterIcons}
         />
         <FontAwesomeIcon
           icon={faFacebook}
-          className={styles.divfootericons}
+          className={styles.divFooterIcons}
         />
       </div>
       <div>

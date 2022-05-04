@@ -1,0 +1,17 @@
+.input {
+  border: 2px solid #dcddf9;
+  border-radius: 3px;
+  display: block;
+  font-size: 14px;
+  height: 42px;
+  margin-left: 5px;
+  padding: 5px;
+  width: 315px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.inputLabel {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 5px;
+}

@@ -1,10 +1,11 @@
 import Head from "next/head";
-import InputButtonComponent from "../components/InputButton/index";
-import FooterComponent from "../components/Footer/index";
-import SingleStatComponent from "../components/Statistics/index";
-import UserIconComponent from "../components/Icon/index";
-import InputButtonTitleComponent from "../components/InputButtonTitle/index";
-import InputCodeComponent from "../components/InputCode/index";
+import InputButton from "../components/InputButton";
+import Footer from "../components/Footer";
+import SingleStat from "../components/Statistics";
+import UserIcon from "../components/Icon";
+import InputButtonTitle from "../components/InputButtonTitle";
+import InputCode from "../components/InputCode";
+// import Input from "../components/Input/index";
 // import Image from "next/image";
 import Header from "../components/header";
 import Input from "../components/input";
@@ -65,35 +66,40 @@ export default function Home() {
         </section>
       </div>
       <div>
-        <InputButtonComponent
+        <InputButton
           nameU="codigo"
           placeholderU="Ingresa"
           contentU="Registro"
         />
-        <SingleStatComponent
+        <SingleStat
           pj={20}
           pg={20}
           pp={20}
           pe={20}
           nj={20}
         />
-        <UserIconComponent />
-        <InputButtonTitleComponent
+        <UserIcon />
+        <InputButtonTitle
           titleU="Añadir integrante"
           nameU="addIntegrante"
           placeholderU="Ingresa el nombre del jugador"
           contentU="Añadir"
         />
-        <InputCodeComponent
+        <InputCode
           titleU="Código de acceso"
           nameU="accessCode"
           placeholderU="Código"
           contentU="Generar código"
         />
+        {/* <Input
+          title="Titulo"
+          name="input"
+          placeholder="Input"
+        /> */}
       </div>
 
       <footer>
-        <FooterComponent> </FooterComponent>
+        <Footer />
       </footer>
     </>
   );

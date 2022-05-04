@@ -1,9 +1,10 @@
-import styles from "../../styles/InputButtonTitle.module.css";
+import styles from "./InputButtonTitle.module.css";
 import Button from "../Button";
+import Input from "../Input/index";
 
 // U de que es el parametro que ingresa el usuario
 // Esta es la molecula
-export default function InputButtonTitleComponent({
+export default function InputButtonTitle({
   titleU,
   nameU,
   placeholderU,
@@ -11,34 +12,17 @@ export default function InputButtonTitleComponent({
 }) {
   return (
     // Seria el placeholder y el contenido del boton ?
-    <div className={styles.inputbutton}>
-      <InputComponent
+    <div className={styles.inputButton}>
+      {/* <label htmlFor="title">{titleU}</label> */}
+      <Input
         title={titleU}
         name={nameU}
         placeholder={placeholderU}
       />
-
-      <Button>{contentU}</Button>
-      {/* <ButtonComponent content={contentU} /> */}
+      {/* Utilice el componente Boton, pero mantuve el tamaño del 
+      boton anterior, de ser necesario se cambia.
+      El tamaño actual me pareció un poco más estético.  */}
+      <Button variant="primary">{contentU}</Button>
     </div>
-  );
-}
-
-// Atomos
-// export function ButtonComponent({ content }) {
-//   return <button type="button">{content}</button>;
-// }
-
-// Atomos
-export function InputComponent({ title, name, placeholder }) {
-  return (
-    <>
-      <label htmlFor="title">{title}</label>
-      <input
-        name={name}
-        type="text"
-        placeholder={placeholder}
-      />
-    </>
   );
 }
