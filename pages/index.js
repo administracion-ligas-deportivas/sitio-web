@@ -1,10 +1,8 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import InputButtonComponent from "../components/InputButton/index";
 import FooterComponent from "../components/Footer/index";
 import SingleStatComponent from "../components/Statistics/index";
 import UserIconComponent from "../components/Icon/index";
-
 // import Image from "next/image";
 import Header from "../components/header";
 import Input from "../components/input";
@@ -31,11 +29,10 @@ export default function Home() {
         <Jugador />
         <Button />
       </div>
-
-      <main className={styles.main}>
+      <div>
         <InputButtonComponent
           name="codigo"
-          placeholder="Ingresa codigo"
+          placeholder="Ingresa"
           content="Registro"
         />
         <SingleStatComponent
@@ -46,7 +43,8 @@ export default function Home() {
           nj={20}
         />
         <UserIconComponent />
-      </main>
+      </div>
+
       <footer>
         <FooterComponent> </FooterComponent>
       </footer>

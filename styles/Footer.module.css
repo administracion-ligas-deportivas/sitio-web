@@ -1,0 +1,35 @@
+.divfooter {
+  align-items: center;
+  background-color: #1a1c9e;
+  color: white;
+  display: flex;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.divfooterdivicons {
+  display: flex;
+  margin-left: 50px;
+}
+
+.divfooter a {
+  display: flex;
+  float: right;
+  margin: 35px;
+}
+
+.divfooter a:hover {
+  text-decoration: underline;
+}
+
+.divfooter p {
+  display: flex;
+  text-align: center;
+}
+
+.divfootericons {
+  margin-right: 20px;
+  width: 20px;
+}

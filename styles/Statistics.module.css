@@ -1,0 +1,30 @@
+.singlestat {
+  display: flex;
+  height: 424px;
+  margin: 10px;
+  width: 269px;
+}
+
+.singlestat div {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+.singlestat h2 {
+  color: #1e1457;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 20px;
+  text-align: center;
+}
+
+.singlestat p {
+  color: #1e1457;
+  font-size: 14px;
+}
+
+.singlestatpp {
+  display: flex;
+  justify-content: space-between;
+}

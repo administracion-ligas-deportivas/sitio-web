@@ -5,72 +5,33 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import styles from "../../styles/Footer.module.css";
 
 library.add(faFacebook, faInstagram, faTwitter);
 
 export default function FooterComponent() {
   return (
-    <div
-      style={{
-        alignitems: "center",
-        background: "#1A1C9E",
-        color: "white",
-        display: "flex",
-        fontFamily: "Helvetica",
-        fontSize: 12,
-        justifyContent: "space-between",
-        padding: "1rem 0",
-      }}
-    >
-      <div
-        style={{
-          marginLeft: "50px",
-          display: "flex",
-        }}
-      >
+    <div className={styles.divfooter}>
+      <div className={styles.divfooterdivicons}>
         <FontAwesomeIcon
           icon={faTwitter}
-          style={{ width: "20px", marginRight: "20px" }}
+          className={styles.divfootericons}
         />
         <FontAwesomeIcon
           icon={faInstagram}
-          style={{ width: "20px", marginRight: "20px" }}
+          className={styles.divfootericons}
         />
         <FontAwesomeIcon
           icon={faFacebook}
-          style={{ width: "20px", marginRight: "20px" }}
+          className={styles.divfootericons}
         />
       </div>
-      <div
-        style={{
-          marginTop: "20px",
-          marginLeft: "100px",
-          justifyContent: "center",
-        }}
-      >
-        © Administración de Ligas Deportivas
+      <div>
+        <p>© Administración de Ligas Deportivas</p>
       </div>
-      <div
-        style={{
-          margin: "20px",
-        }}
-      >
-        <a
-          style={{
-            margin: "20px",
-          }}
-          href="next/link"
-        >
-          Contáctanos
-        </a>
-        <a
-          style={{
-            margin: "20px",
-          }}
-          href="next/link"
-        >
-          Acerca de
-        </a>
+      <div>
+        <a href="next/link"> Contáctanos </a>
+        <a href="next/link"> Acerca de </a>
       </div>
     </div>
   );
