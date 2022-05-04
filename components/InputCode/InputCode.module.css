@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  font-size: 0.9em;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
 .inputbutton {
   display: flex;
   font-size: 14px;
@@ -20,7 +27,7 @@
   width: 360px;
 }
 
-.inputbutton button {
+/* .inputbutton button {
   background: #1e1457;
   border: 0 px;
   border-radius: 4px;
@@ -29,7 +36,7 @@
   margin-left: 10px;
   margin-top: 25px;
   width: 150px;
-}
+} */
 
 .inputbutton label {
   font-weight: 600;
@@ -37,21 +44,23 @@
   position: absolute;
 }
 
-.inputbutton button:hover {
+/* .inputbutton button:hover {
   background: #3c64b1;
 }
 
 .inputbutton button:disabled {
   background: #3c64b1;
-}
+} */
 
 .inputbutton input:placeholder-shown {
   padding: 5px;
 }
 
-.copy-icon {
+.copyIcon {
   color: #1e1457;
 
   /* margin: auto; */
-  width: 20px;
+  font-size: 2em;
+
+  /* width: 3em; */
 }
