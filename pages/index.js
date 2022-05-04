@@ -3,6 +3,8 @@ import InputButtonComponent from "../components/InputButton/index";
 import FooterComponent from "../components/Footer/index";
 import SingleStatComponent from "../components/Statistics/index";
 import UserIconComponent from "../components/Icon/index";
+import InputButtonTitleComponent from "../components/InputButtonTitle/index";
+import InputCodeComponent from "../components/InputCode/index";
 // import Image from "next/image";
 import Header from "../components/header";
 import Input from "../components/input";
@@ -31,9 +33,9 @@ export default function Home() {
       </div>
       <div>
         <InputButtonComponent
-          name="codigo"
-          placeholder="Ingresa"
-          content="Registro"
+          nameU="codigo"
+          placeholderU="Ingresa"
+          contentU="Registro"
         />
         <SingleStatComponent
           pj={20}
@@ -43,6 +45,18 @@ export default function Home() {
           nj={20}
         />
         <UserIconComponent />
+        <InputButtonTitleComponent
+          titleU="Añadir integrante"
+          nameU="addIntegrante"
+          placeholderU="Ingresa el nombre del jugador"
+          contentU="Añadir"
+        />
+        <InputCodeComponent
+          titleU="Código de acceso"
+          nameU="accessCode"
+          placeholderU="Código"
+          contentU="Generar código"
+        />
       </div>
 
       <footer>

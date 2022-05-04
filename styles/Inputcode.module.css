@@ -1,9 +1,13 @@
 .inputbutton {
   display: flex;
   font-size: 14px;
-  height: 42px;
+  height: 70px;
   position: relative;
   width: 450px;
+}
+
+.copybutton {
+  border: #1e1457;
 }
 
 .inputbutton input {
@@ -11,6 +15,7 @@
   border-radius: 3px;
   display: block;
   height: 42px;
+  margin-top: 25px;
   padding: 5px;
   width: 360px;
 }
@@ -22,7 +27,14 @@
   color: white;
   height: 42px;
   margin-left: 10px;
-  width: 125px;
+  margin-top: 25px;
+  width: 150px;
+}
+
+.inputbutton label {
+  font-weight: 600;
+  padding-left: 5px;
+  position: absolute;
 }
 
 .inputbutton button:hover {
@@ -35,4 +47,10 @@
 
 .inputbutton input:placeholder-shown {
   padding: 5px;
+}
+
+.copyicon {
+  color: #1e1457;
+  margin: auto;
+  width: 20px;
 }

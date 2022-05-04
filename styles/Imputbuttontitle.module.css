@@ -1,7 +1,7 @@
 .inputbutton {
   display: flex;
   font-size: 14px;
-  height: 42px;
+  height: 70px;
   position: relative;
   width: 450px;
 }
@@ -11,6 +11,7 @@
   border-radius: 3px;
   display: block;
   height: 42px;
+  margin-top: 25px;
   padding: 5px;
   width: 360px;
 }
@@ -22,6 +23,7 @@
   color: white;
   height: 42px;
   margin-left: 10px;
+  margin-top: 25px;
   width: 125px;
 }
 
@@ -29,8 +31,10 @@
   background: #3c64b1;
 }
 
-.inputbutton button:disabled {
-  background: #3c64b1;
+.inputbutton label {
+  font-weight: 600;
+  padding-left: 5px;
+  position: absolute;
 }
 
 .inputbutton input:placeholder-shown {
