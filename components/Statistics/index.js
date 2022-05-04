@@ -24,7 +24,11 @@ export default function SingleStatComponent({ pj, pg, pp, pe, nj }) {
         <div className="singlestatpp">
           <p>Número de jugadores</p> <p>{nj}</p>
         </div>
-        <Image src={myimg} width="229px" height="175px" />
+        <Image
+          src={myimg}
+          width="229px"
+          height="175px"
+        />
       </div>
     </section>
   );

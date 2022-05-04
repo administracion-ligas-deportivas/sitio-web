@@ -14,6 +14,8 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 72
   },
+  // "editor.rulers": [80],
+  // "editor.wordWrapColumn": 80,
   // https://qvault.io/clean-code/line-breaks-vs-code-lf-vs-crlf/
   // Finales de Línea consistentes
   "files.eol": "\n",
