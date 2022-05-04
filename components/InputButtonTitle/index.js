@@ -1,4 +1,5 @@
 import styles from "../../styles/InputButtonTitle.module.css";
+import Button from "../Button";
 
 // U de que es el parametro que ingresa el usuario
 // Esta es la molecula
@@ -16,15 +17,17 @@ export default function InputButtonTitleComponent({
         name={nameU}
         placeholder={placeholderU}
       />
-      <ButtonComponent content={contentU} />
+
+      <Button>{contentU}</Button>
+      {/* <ButtonComponent content={contentU} /> */}
     </div>
   );
 }
 
 // Atomos
-export function ButtonComponent({ content }) {
-  return <button type="button">{content}</button>;
-}
+// export function ButtonComponent({ content }) {
+//   return <button type="button">{content}</button>;
+// }
 
 // Atomos
 export function InputComponent({ title, name, placeholder }) {

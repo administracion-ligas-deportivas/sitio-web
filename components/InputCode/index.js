@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
-import styles from "../../styles/InputCode.module.css";
+
+import styles from "./InputCode.module.css";
+import Button from "../Button";
 
 // U parametros del Usuario
 // Molecula
@@ -19,16 +21,25 @@ export default function InputCodeComponent({
         name={nameU}
         placeholder={placeholderU}
       />
-      <ButtonComponent content={contentU} />
-      <CopyComponent />
+      <Button>{contentU}</Button>
+      <Button
+        variant="primary"
+        inverse
+      >
+        <FontAwesomeIcon
+          icon={faCopy}
+          className={styles.copyIcon}
+        />
+      </Button>
+      {/* <CopyComponent /> */}
     </div>
   );
 }
 
-// Atomos
-export function ButtonComponent({ content }) {
-  return <button type="button">{content}</button>;
-}
+// // Atomos
+// export function ButtonComponent({ content }) {
+//   return <button type="button">{content}</button>;
+// }
 
 // Atomos
 export function InputComponent({ title, name, placeholder }) {
@@ -60,7 +71,7 @@ export function CopyComponent() {
     >
       <FontAwesomeIcon
         icon={faCopy}
-        className={styles.copyicon}
+        className={styles.copyIcon}
       />
     </button>
   );

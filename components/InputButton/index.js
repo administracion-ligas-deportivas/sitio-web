@@ -1,4 +1,5 @@
 import styles from "../../styles/InputButton.module.css";
+import Button from "../Button";
 
 // U parametros del Usuario
 // Molecula
@@ -15,7 +16,8 @@ export default function InputButtonComponent({
         name={nameU}
         placeholder={placeholderU}
       />
-      <ButtonComponent content={contentU} />
+      <Button>{contentU}</Button>
+      {/* <ButtonComponent content={contentU} /> */}
     </div>
   );
 }

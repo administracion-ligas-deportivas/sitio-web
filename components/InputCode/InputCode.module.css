@@ -49,8 +49,9 @@
   padding: 5px;
 }
 
-.copyicon {
+.copy-icon {
   color: #1e1457;
-  margin: auto;
+
+  /* margin: auto; */
   width: 20px;
 }

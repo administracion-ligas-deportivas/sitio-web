@@ -7,7 +7,7 @@
   color: white;
   display: flex;
   flex-wrap: wrap;
-  font-size: 0.95em;
+  font-size: 0.9em;
   font-weight: 500;
   justify-content: center;
   min-height: 2.5em;
@@ -15,12 +15,23 @@
   /* margin-left: 10px; */
 
   /* margin-top: 25px; */
-  min-width: 7em;
-  padding: 0.7em;
+
+  /* min-width: 7em; */
+  padding: 0.6em;
 }
 
 .primary {
   background-color: #1e1457;
+}
+
+.primary.inverse {
+  background-color: #fff;
+  border: 1px solid currentcolor;
+  color: #1e1457;
+}
+
+.primary.inverse:hover {
+  background-color: rgb(244 246 251);
 }
 
 .primary:hover {
@@ -53,5 +64,5 @@
 
 .button[disabled] {
   background-color: rgb(239 239 239);
-  color: gray;
+  color: rgb(156 156 156);
 }
