@@ -1,4 +1,4 @@
-import styles from "../../styles/Imputbuttontitle.module.css";
+import styles from "../../styles/InputButtonTitle.module.css";
 
 // U de que es el parametro que ingresa el usuario
 // Esta es la molecula

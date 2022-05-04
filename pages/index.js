@@ -9,7 +9,7 @@ import InputCodeComponent from "../components/InputCode/index";
 import Header from "../components/header";
 import Input from "../components/input";
 import Jugador from "../components/jugador";
-import Button from "../components/button";
+import Button from "../components/Button";
 
 export default function Home() {
   return (
@@ -29,7 +29,40 @@ export default function Home() {
         <Header />
         <Input />
         <Jugador />
-        <Button />
+        <section
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            gap: ".5em",
+            flexWrap: "wrap",
+            padding: "1em",
+          }}
+        >
+          <Button variant="primary">
+            <p>Primary</p>
+          </Button>
+          <Button disabled>
+            <p>Primary Disabled</p>
+          </Button>
+          <Button variant="secondary">
+            <p>Secondary</p>
+          </Button>
+          <Button
+            variant="secondary"
+            disabled
+          >
+            <p>Secondary Disabled</p>
+          </Button>
+          <Button
+            variant="accent"
+            disabled
+          >
+            <p>Accent Disabled</p>
+          </Button>
+          <Button variant="accent">
+            <p>Accent</p>
+          </Button>
+        </section>
       </div>
       <div>
         <InputButtonComponent

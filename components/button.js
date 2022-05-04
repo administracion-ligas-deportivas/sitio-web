@@ -5,7 +5,27 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable @next/next/no-css-tags */
 
-function button() {
+import styles from "../styles/Button.module.css";
+
+export default function Button({
+  variant = "primary",
+  disabled = false,
+  children,
+}) {
+  const classNames = [styles.button, styles[variant]].join(" ");
+
+  return (
+    <button
+      type="button"
+      className={classNames}
+      disabled={disabled}
+    >
+      {children}
+    </button>
+  );
+}
+
+/* function Button({ type = "primary" }) {
   return (
     <div>
       <button
@@ -13,11 +33,6 @@ function button() {
         href="www.google.com"
         style={{
           backgroundColor: "rgb(30, 20, 87)",
-          borderRadius: "10px",
-          color: "white",
-          fontWeight: "bold",
-          height: "40px",
-          width: "70px",
         }}
       >
         Botón
@@ -115,5 +130,4 @@ function button() {
       </button>
     </div>
   );
-}
-export default button;
+} */
