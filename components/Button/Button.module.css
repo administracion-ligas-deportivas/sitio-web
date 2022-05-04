@@ -43,7 +43,8 @@
   background-color: #3c64b1;
 }
 
-.button.primary[disabled] {
+.button.primary[disabled],
+.button.accent[disabled] {
   background-color: rgb(244 246 251);
 }
 

@@ -7,18 +7,25 @@
   /* padding: 0.5em; */
 }
 
+.button {
+  flex: 1;
+}
+
 .buttonsContainer {
   display: flex;
+  flex-grow: 1;
 
   /* flex-direction: row; */
 
   /* justify-content: space-between; */
   gap: inherit;
-  width: 100%;
+
+  /* width: 100%; */
 }
 
 .elementsContainer {
   display: flex;
+  flex-flow: wrap;
   flex-direction: row;
   gap: 0.5em;
 }

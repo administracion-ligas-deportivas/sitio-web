@@ -42,7 +42,12 @@ export default function InputCodeComponent({
             disabled
           />
           <div className={styles.buttonsContainer}>
-            <Button value="numero-placeholder">{contentU}</Button>
+            <Button
+              value="numero-placeholder"
+              classNames={[styles.button]}
+            >
+              {contentU}
+            </Button>
             <Button
               variant="primary"
               inverse

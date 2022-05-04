@@ -12,9 +12,11 @@ export default function Button({
   disabled = false,
   inverse = false,
   value = "",
+  classNames = [],
   children,
 }) {
-  const classNames = [
+  const allClassNames = [
+    ...classNames,
     styles.button,
     styles[variant],
     // Si inverse es verdadero, lo agrega, si no, hace corto circuito.
@@ -24,7 +26,7 @@ export default function Button({
   return (
     <button
       type="button"
-      className={classNames}
+      className={allClassNames}
       disabled={disabled}
       value={value}
     >
