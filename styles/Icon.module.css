@@ -1,0 +1,22 @@
+.usericon {
+  color: #c3cbcd;
+  cursor: pointer;
+  margin-left: 90px;
+  margin-top: 80px;
+  position: absolute;
+  width: 100px;
+}
+
+.usericon:hover {
+  color: #1e1457;
+}
+
+.usericondiv {
+  background-color: #f4f5f4;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 247px;
+  margin: 5px;
+  position: relative;
+  width: 247px;
+}
