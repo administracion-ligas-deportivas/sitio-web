@@ -1,4 +1,36 @@
-/* stylelint-disable-next-line selector-class-pattern */
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+
+  /* gap: 0.5em; */
+
+  /* padding: 0.5em; */
+}
+
+.button {
+  flex: 1;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-grow: 1;
+
+  /* flex-direction: row; */
+
+  /* justify-content: space-between; */
+  gap: inherit;
+
+  /* width: 100%; */
+}
+
+.elementsContainer {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
 .inputButton {
   display: flex;
   font-size: 14px;
@@ -26,6 +58,17 @@
   width: 100px;
 }
 
+/* .inputbutton button {
+  background: #1e1457;
+  border: 0 px;
+  border-radius: 4px;
+  color: white;
+  height: 42px;
+  margin-left: 10px;
+  margin-top: 25px;
+  width: 150px;
+} */
+
 /* stylelint-disable-next-line selector-class-pattern */
 .inputButton label {
   font-weight: 600;
@@ -43,8 +86,23 @@
   padding: 5px;
 }
 
-/* stylelint-disable-next-line selector-class-pattern */
+/* .inputbutton button:hover {
+  background: #3c64b1;
+}
+
+.inputbutton button:disabled {
+  background: #3c64b1;
+} */
+
+.inputbutton input:placeholder-shown {
+  padding: 5px;
+}
+
 .copyIcon {
   color: #1e1457;
-  width: 20px;
+
+  /* margin: auto; */
+  font-size: 1.3em;
+
+  /* width: 3em; */
 }

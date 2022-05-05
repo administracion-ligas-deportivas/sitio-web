@@ -5,7 +5,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable @next/next/no-css-tags */
 
-function Input() {
+function OldInput() {
   return (
     <div
       style={{
@@ -33,4 +33,4 @@ function Input() {
   );
 }
 
-export default Input;
+export default OldInput;

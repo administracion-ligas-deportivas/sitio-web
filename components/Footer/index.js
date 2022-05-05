@@ -11,7 +11,7 @@ library.add(faFacebook, faInstagram, faTwitter);
 
 export default function Footer() {
   return (
-    <div className={styles.divFooter}>
+    <footer className={styles.divFooter}>
       <div className={styles.divFooterDivIcons}>
         <FontAwesomeIcon
           icon={faTwitter}
@@ -33,6 +33,6 @@ export default function Footer() {
         <a href="next/link"> Contáctanos </a>
         <a href="next/link"> Acerca de </a>
       </div>
-    </div>
+    </footer>
   );
 }
