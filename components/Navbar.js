@@ -1,10 +1,6 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable @next/next/no-css-tags */
-
 // import { library } from "@fortawesome/fontawesome-svg-core";
+import Link from "next/link";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCompass,
@@ -12,7 +8,7 @@ import {
   faCircleUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Header() {
+function Navbar() {
   return (
     <div
       style={{
@@ -32,11 +28,24 @@ function Header() {
         />
       </div>
       <div style={{ margin: "auto" }}>
-        <a style={{ padding: 70 }}>Ligas</a>
-        <a style={{ padding: 70 }}>Torneos</a>
-        <a style={{ padding: 70 }}>Equipo</a>
-        <a style={{ padding: 70 }}>Calendario</a>
-        <a style={{ padding: 70 }}>Estadisticas</a>
+        <Link href="/">
+          {/* 
+            Ignorar el warning. Esto sucede porque no hay href en el anchor, pero al estar dentro del Link, no lo requiere. 
+          */}
+          <a style={{ padding: 70 }}>Ligas</a>
+        </Link>
+        <Link href="/">
+          <a style={{ padding: 70 }}>Torneos</a>
+        </Link>
+        <Link href="/">
+          <a style={{ padding: 70 }}>Equipo</a>
+        </Link>
+        <Link href="/">
+          <a style={{ padding: 70 }}>Calendario</a>
+        </Link>
+        <Link href="/">
+          <a style={{ padding: 70 }}>Estadisticas</a>
+        </Link>
       </div>
       <div>
         <FontAwesomeIcon
@@ -54,4 +63,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

@@ -1,15 +1,9 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable @next/next/no-css-tags */
+import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
-function Jugador(playerName = "") {
-  const name = "Nombre del jugador";
+function Jugador({ playerName = "Nombre del jugador" }) {
   return (
     <div
       style={{
@@ -21,7 +15,9 @@ function Jugador(playerName = "") {
       }}
     >
       <div>
-        <a>{name}</a>
+        <Link href="/">
+          <a>{playerName}</a>
+        </Link>
       </div>
       <div>
         <FontAwesomeIcon

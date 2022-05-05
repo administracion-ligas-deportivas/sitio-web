@@ -10,11 +10,12 @@ import InputCode from "../components/InputCode";
 // import Input from "../components/Input/index";
 
 // import Image from "next/image";
-import Header from "../components/header";
 import OldInput from "../components/OldInput";
 import Input from "../components/Input";
 import Label from "../components/Label";
-import Jugador from "../components/jugador";
+import Jugador from "../components/Jugador";
+// import Image from "next/image";
+import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 
 export default function Home() {
@@ -31,7 +32,8 @@ export default function Home() {
           href="/favicon.ico"
         />
       </Head>
-      <Header />
+      <Navbar />
+
       <div className="container mx-auto py-2">
         <div>
           <Label
