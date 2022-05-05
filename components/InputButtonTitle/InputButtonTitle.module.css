@@ -1,0 +1,35 @@
+/* stylelint-disable-next-line selector-class-pattern */
+.inputButton {
+  display: flex;
+  font-size: 14px;
+  height: 70px;
+  position: relative;
+  width: 450px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.inputButton input {
+  display: block;
+  margin-top: 25px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.inputButton button {
+  height: 42px;
+  margin-left: 10px;
+  margin-top: 25px;
+  padding: 5px;
+  width: 125px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.inputButton label {
+  font-weight: 600;
+  padding-left: 5px;
+  position: absolute;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.inputButton input:placeholder-shown {
+  padding: 5px;
+}

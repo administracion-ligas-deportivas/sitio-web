@@ -1,4 +1,4 @@
-function Input({ id }) {
+function OldInput({ id }) {
   return (
     <div
       style={{
@@ -31,7 +31,7 @@ function Input({ id }) {
       - https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/label-has-associated-control.md#case-i-just-want-a-text-label-associated-with-an-input 
       */}
       <label htmlFor={id}>
-        {/* Input */}
+        {/* OldInput */}
         <input
           type="text"
           name="input"
@@ -48,4 +48,4 @@ function Input({ id }) {
   );
 }
 
-export default Input;
+export default OldInput;

@@ -1,4 +1,5 @@
-.usericon {
+/* stylelint-disable-next-line selector-class-pattern */
+.userIcon {
   color: #c3cbcd;
   cursor: pointer;
   margin-left: 90px;
@@ -7,11 +8,13 @@
   width: 100px;
 }
 
-.usericon:hover {
+/* stylelint-disable-next-line selector-class-pattern */
+.userIcon:hover {
   color: #1e1457;
 }
 
-.usericondiv {
+/* stylelint-disable-next-line selector-class-pattern */
+.userIconDiv {
   background-color: #f4f5f4;
   border-radius: 50%;
   cursor: pointer;
