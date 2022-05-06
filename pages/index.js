@@ -1,4 +1,5 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Link from "next/link";
 
 import Head from "next/head";
 import InputButton from "../components/InputButton";
@@ -114,6 +115,13 @@ export default function Home() {
           placeholder="Input"
         /> */}
         </div>
+
+        <Link
+          href="/create-team"
+          passHref
+        >
+          <a href="dummy-href"> Regístrate ahora </a>
+        </Link>
       </div>
 
       <Footer />
