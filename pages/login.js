@@ -13,8 +13,8 @@ function Login() {
 
   return (
     <div className="flex flex-col justify-between h-full">
-      <section className={[styles.box]}>
-        <div className={imageClasses}>
+      <section className={[styles.mainContainer]}>
+        <section className={imageClasses}>
           <h1 className={styles.titleLeague}>
             Administración de Ligas Deportivas
           </h1>
@@ -23,8 +23,22 @@ function Login() {
             width="300px"
             height="300px"
           />
-        </div>
-        <div className={[styles.container, styles.loginContainer].join(" ")}>
+        </section>
+        <main className={[styles.container, styles.loginContainer].join(" ")}>
+          <nav className={styles.navLogin}>
+            <Link
+              href="./signup"
+              passHref
+            >
+              <a
+                href="dummy-href"
+                className={styles.elementsContainerAnchor}
+              >
+                {" "}
+                Regístrate ahora{" "}
+              </a>
+            </Link>
+          </nav>
           <h1 className={styles.titlePage}>Inicia sesión</h1>
           <form
             action=""
@@ -48,23 +62,11 @@ function Login() {
                 placeholder="Contraseña"
               />
             </Label>
-            <Link
-              href="./signup"
-              passHref
-            >
-              <a
-                href="dummy-href"
-                className={styles.elementsContainerAnchor}
-              >
-                {" "}
-                Regístrate ahora{" "}
-              </a>
-            </Link>
             <Button variant="primary">
               <p>Iniciar sesión</p>
             </Button>
           </form>
-        </div>
+        </main>
       </section>
       <Footer />
     </div>

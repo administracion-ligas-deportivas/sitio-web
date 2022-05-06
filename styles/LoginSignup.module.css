@@ -1,21 +1,28 @@
 .titleLeague {
   color: #1e1457;
-  font-size: 32px;
+  font-size: 3em;
   font-weight: 500;
+  line-height: 1em;
   text-align: center;
 }
 
 .titlePage {
-  font-size: 44px;
+  font-size: 3em;
   font-weight: 700;
   text-align: justify;
 }
 
-.box {
+.mainContainer {
   background: #eee;
   display: flex;
+  flex: 1;
+  flex-flow: wrap;
   flex-direction: row;
   position: relative;
+}
+
+.mainContainer > * {
+  padding: 2em;
 }
 
 .div1 {
@@ -49,7 +56,6 @@ manera */
 .container {
   /* margin: 100px; */
   align-items: center;
-  display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
@@ -58,6 +64,8 @@ manera */
 .loginContainer {
   align-items: stretch;
   background-color: white;
+  display: flex;
+  gap: 2em;
 }
 
 .elementsContainerAnchor {
