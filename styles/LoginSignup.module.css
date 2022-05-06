@@ -50,6 +50,14 @@ div.div1su {
   position: relative;
 }
 
+.formContainer button {
+  margin-top: 2rem;
+}
+
+.formContainer label {
+  margin-top: auto;
+}
+
 /* ¿Esta bien manipular el tamaño del input de esta 
 manera */
 
@@ -70,10 +78,18 @@ manera */
 
 .elementsContainerAnchor {
   color: #1a1c9e;
-  float: left;
+  display: flex;
   font-size: 14px;
+  justify-content: flex-end;
 }
 
 .elementsContainerAnchor:hover {
   text-decoration: underline;
+}
+
+/* stylelint-disable-next-line block-no-empty */
+.genderDataContainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
 }

@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import myimg from "../public/img-login.png";
-import Footer from "../components/Footer";
 import styles from "../styles/LoginSignup.module.css";
 import Input from "../components/Input/index";
 import Label from "../components/Label";
@@ -68,7 +67,6 @@ function Login() {
           </form>
         </main>
       </section>
-      <Footer />
     </div>
   );
 }
