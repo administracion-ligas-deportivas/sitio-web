@@ -22,7 +22,6 @@ export default function Button({
     // Si inverse es verdadero, lo agrega. Si no, hace corto circuito.
     inverse && styles.inverse,
   ].join(" ");
-
   return (
     <button
       type="button"
