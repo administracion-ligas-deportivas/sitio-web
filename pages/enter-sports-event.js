@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import styles from "../styles/Loginse.module.css";
 import InputButtonTitle from "../components/InputButtonTitle/index";
 
-function SignupSE() {
+function EnterSportsEvent() {
   return (
     <>
       <Navbar />
@@ -24,4 +24,4 @@ function SignupSE() {
   );
 }
 
-export default SignupSE;
+export default EnterSportsEvent;
