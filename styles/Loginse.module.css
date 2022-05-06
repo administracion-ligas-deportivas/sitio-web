@@ -1,0 +1,12 @@
+.section {
+  background: #f1f6;
+  height: 71vh;
+  position: relative;
+  width: 100%;
+}
+
+.sectionInput {
+  background: #e7eaf6;
+  float: left;
+  margin: auto;
+}
