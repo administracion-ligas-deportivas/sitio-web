@@ -28,7 +28,7 @@ function Jugador({ playerName = "Nombre del jugador" }) {
       <div>
         <FontAwesomeIcon
           icon={faTrashCan}
-          style={{ height: 15, margin: 5, marginLeft: 15 }}
+          style={{ height: 15, margin: 5, marginLeft: 15, color: "red" }}
         />
       </div>
     </div>
