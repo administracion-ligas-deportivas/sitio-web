@@ -1,0 +1,71 @@
+.titleLeague {
+  color: #1e1457;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.titlePage {
+  font-size: 44px;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.box {
+  background: #eee;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.div1 {
+  background: #e7eaf6;
+  display: flex;
+}
+
+/* para cambiar el color cuando es en Sign up */
+div.div1su {
+  background: #efefef;
+  float: left;
+  height: 100vh;
+  margin: auto;
+  width: 500px;
+}
+
+.formContainer {
+  /* display: block; */
+
+  background-color: white;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  gap: 0.5em;
+  position: relative;
+}
+
+/* ¿Esta bien manipular el tamaño del input de esta 
+manera */
+
+.container {
+  /* margin: 100px; */
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginContainer {
+  align-items: stretch;
+  background-color: white;
+}
+
+.elementsContainerAnchor {
+  color: #1a1c9e;
+  float: left;
+  font-size: 14px;
+}
+
+.elementsContainerAnchor:hover {
+  text-decoration: underline;
+}

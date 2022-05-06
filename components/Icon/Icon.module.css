@@ -2,10 +2,10 @@
 .userIcon {
   color: #c3cbcd;
   cursor: pointer;
-  margin-left: 90px;
-  margin-top: 80px;
+  font-size: 6rem;
+  margin-left: 75px;
+  margin-top: 65px;
   position: absolute;
-  width: 100px;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -21,5 +21,5 @@
   height: 247px;
   margin: 5px;
   position: relative;
-  width: 247px;
+  width: 250px;
 }
