@@ -15,3 +15,12 @@
   padding: 40px;
   background-color: rgb(243, 246, 250);
 }
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 45%;
+}

@@ -34,70 +34,90 @@ export default function Home() {
         <div>
           <h1 className={styles.titlePage}>Crear Equipo</h1>
           <div className={styles.rectangle}>
-            <div>
-              <Label
-                className={styles.subtitlePage}
-                htmlFor="new-input"
-              >
-                Nombre
-                <Input
-                  id="team-name"
-                  placeholder="Equipo"
-                />
-              </Label>
-            </div>
-            <div>
-              <Label
-                className={styles.subtitlePage}
-                htmlFor="new-input"
-              >
-                Deporte
-                <Input
-                  id="team-name"
-                  placeholder="Descripción"
-                />
-              </Label>
+            <div className={styles.flexContainer}>
+              <div className={styles.input}>
+                <Label
+                  className={styles.subtitlePage}
+                  htmlFor="new-input"
+                >
+                  Nombre
+                  <Input
+                    id="team-name"
+                    placeholder="Equipo"
+                  />
+                </Label>
+              </div>
+              <div className={styles.input}>
+                <Label
+                  className={styles.subtitlePage}
+                  htmlFor="new-input"
+                >
+                  Deporte
+                  <Input
+                    id="team-name"
+                    placeholder="Descripción"
+                  />
+                </Label>
+              </div>
             </div>
             <div>
               <Label className={styles.subtitlePage}> Integrantes </Label>
             </div>
-            <div>
-              <Jugador />
-              <Jugador />
-              <Jugador />
-              <Jugador />
-              <Jugador />
+            <div className={styles.flexContainer}>
+              <div>
+                <Jugador />
+                <Jugador />
+                <Jugador />
+                <Jugador />
+                <Jugador />
+              </div>
+              <div>
+                <Jugador />
+                <Jugador />
+                <Jugador />
+                <Jugador />
+                <Jugador />
+              </div>
+              <div>
+                <Jugador />
+                <Jugador />
+                <Jugador />
+                <Jugador />
+                <Jugador />
+              </div>
+              <div>
+                <Jugador />
+                <Jugador />
+                <Jugador />
+                <Jugador />
+                <Jugador />
+              </div>
             </div>
-            <div>
-              <Jugador />
-              <Jugador />
-              <Jugador />
-              <Jugador />
-              <Jugador />
-            </div>
-            <div>
-              <Label
-                className={styles.subtitlePage}
-                htmlFor="new-input"
-              >
-                Tipo de Torneo
-                <Input
-                  id="tipo-torneo"
-                  placeholder="Torneo"
-                />
-              </Label>
-            </div>
-            <div>
-              <Label
-                className={styles.subtitlePage}
-                htmlFor="new-input"
-              >
-                Añadir Integrante
-                <Input
-                  id="user-name"
-                  placeholder="Integrante"
-                />
-              </Label>
+            <div className={styles.flexContainer}>
+              <div className={styles.input}>
+                <Label
+                  className={styles.subtitlePage}
+                  htmlFor="new-input"
+                >
+                  Tipo de Torneo
+                  <Input
+                    id="tipo-torneo"
+                    placeholder="Torneo"
+                  />
+                </Label>
+              </div>
+              <div className={styles.input}>
+                <Label
+                  className={styles.subtitlePage}
+                  htmlFor="new-input"
+                >
+                  Añadir Integrante
+                  <Input
+                    id="user-name"
+                    placeholder="Integrante"
+                  />
+                </Label>
+              </div>
             </div>
             <div>
               <Label
