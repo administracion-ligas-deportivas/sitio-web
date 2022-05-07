@@ -120,7 +120,14 @@ export default function Home() {
           href="/create-team"
           passHref
         >
-          <a href="dummy-href"> Regístrate ahora </a>
+          <a href="dummy-href"> Página: Crear Equipo </a>
+        </Link>
+        <br />
+        <Link
+          href="/gestion-equipo"
+          passHref
+        >
+          <a href="dummy-href"> Página: Gestion Equipo </a>
         </Link>
       </div>
 
