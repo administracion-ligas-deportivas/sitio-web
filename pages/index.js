@@ -129,6 +129,12 @@ export default function Home() {
         >
           <a href="dummy-href"> Página: Gestion Equipo </a>
         </Link>
+        <Link
+          href="/editar-perfil"
+          passHref
+        >
+          <a href="dummy-href"> Página: Editar Perfil </a>
+        </Link>
       </div>
 
       <Footer />
