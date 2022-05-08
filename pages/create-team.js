@@ -85,13 +85,6 @@ export default function CrearEquipo() {
                 <Jugador />
                 <Jugador />
               </div>
-              <div>
-                <Jugador />
-                <Jugador />
-                <Jugador />
-                <Jugador />
-                <Jugador />
-              </div>
             </div>
             <div className={styles.flexContainer}>
               <div className={styles.input}>
