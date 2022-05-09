@@ -15,6 +15,7 @@ function EnterSportsEvent() {
             Ingreso a liga/torneo: <br /> Por favor ingrese el código que le
             haya brindado el organizador del evento.
           </p>
+        <div className={styles.sectionInput}>
           <InputButtonTitle
             titleU="Código"
             nameU="sportsEventCode"
