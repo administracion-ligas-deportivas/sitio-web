@@ -31,7 +31,7 @@ export default function Button({
   const attributes = {
     general: { disabled, className: allClassNames },
     anchor: { href, target, rel: "noopener noreferrer" },
-    button: { type: "button", value, buttonType },
+    button: { type: buttonType, value },
   };
 
   // Si es un componente Link de Next.js, el anchor (a) no necesita ningún
