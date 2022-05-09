@@ -1,4 +1,5 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Link from "next/link";
 
 import Head from "next/head";
 import Link from "next/link";
@@ -122,6 +123,26 @@ export default function Home() {
           placeholder="Input"
         /> */}
         </div>
+
+        <Link
+          href="/create-team"
+          passHref
+        >
+          <a href="dummy-href"> Página: Crear Equipo </a>
+        </Link>
+        <br />
+        <Link
+          href="/gestion-equipo"
+          passHref
+        >
+          <a href="dummy-href"> Página: Gestion Equipo </a>
+        </Link>
+        <Link
+          href="/editar-perfil"
+          passHref
+        >
+          <a href="dummy-href"> Página: Editar Perfil </a>
+        </Link>
       </div>
 
       <Footer />
