@@ -1,18 +1,22 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable @next/next/no-css-tags */
-
+import Link from "next/link";
 import styles from "./Button.module.css";
 
+/**
+ * Botón que puede ser una etiqueta button o un anchor (a) dependiendo de los
+ * atributos que reciba. Esto nos permite crear enlaces a otras páginas de forma
+ * semántica con un anchor y crear botones con button, aprovechando las
+ * capacidades de cada etiqueta.
+ */
 export default function Button({
   variant = "primary",
   disabled = false,
   inverse = false,
   value = "",
   classNames = [],
+  isSpaLink = false,
+  href = "",
+  target = "_blank",
+  buttonType = "button",
   children,
 }) {
   const allClassNames = [
@@ -23,121 +27,34 @@ export default function Button({
     inverse && styles.inverse,
   ].join(" ");
 
-  return (
-    <button
-      type="button"
-      className={allClassNames}
-      disabled={disabled}
-      value={value}
-    >
-      {children}
-    </button>
-  );
-}
+  const CustomTag = isSpaLink || href ? "a" : "button";
+  const attributes = {
+    general: { disabled, className: allClassNames },
+    anchor: { href, target, rel: "noopener noreferrer" },
+    button: { type: "button", value, buttonType },
+  };
 
-/* function Button({ type = "primary" }) {
-  return (
-    <div>
-      <button
-        type="button"
-        href="www.google.com"
-        style={{
-          backgroundColor: "rgb(30, 20, 87)",
-        }}
+  // Si es un componente Link de Next.js, el anchor (a) no necesita ningún
+  // atributo. De no ser así y ser un enlace normal, si necesita dichos
+  // atributos.
+  const isNormalLink = !isSpaLink && href;
+  const tagAttributes = {
+    ...(CustomTag === "button" && attributes.button),
+    // Si no es un Link de SPA, agregamos sus atributos.
+    ...(isNormalLink && attributes.anchor),
+    ...attributes.general,
+  };
+
+  if (isSpaLink) {
+    return (
+      <Link
+        href={href}
+        passHref
       >
-        Botón
-      </button>
-      <button
-        type="button"
-        style={{
-          backgroundColor: "rgb(223, 29, 45)",
-          borderRadius: "10px",
-          color: "white",
-          fontWeight: "bold",
-          height: "40px",
-          width: "70px",
-        }}
-      >
-        Botón
-      </button>
-      <button
-        type="button"
-        style={{
-          backgroundColor: "rgb(26, 28, 158)",
-          borderRadius: "10px",
-          color: "white",
-          fontWeight: "bold",
-          height: "40px",
-          width: "70px",
-        }}
-      >
-        Botón
-      </button>
-      <button
-        type="button"
-        style={{
-          backgroundColor: "rgb(60, 100, 177)",
-          borderRadius: "10px",
-          color: "white",
-          fontWeight: "bold",
-          height: "40px",
-          width: "70px",
-        }}
-      >
-        Botón
-      </button>
-      <button
-        type="button"
-        style={{
-          backgroundColor: "rgb(243, 88, 101)",
-          borderRadius: "10px",
-          color: "white",
-          fontWeight: "bold",
-          height: "40px",
-          width: "70px",
-        }}
-      >
-        Botón
-      </button>
-      <button
-        type="button"
-        style={{
-          backgroundColor: "rgb(239, 239, 239)",
-          borderRadius: "10px",
-          color: "black",
-          fontWeight: "bold",
-          height: "40px",
-          width: "70px",
-        }}
-      >
-        Botón
-      </button>
-      <button
-        type="button"
-        style={{
-          backgroundColor: "rgb(244, 246, 251)",
-          borderRadius: "10px",
-          color: "black",
-          fontWeight: "bold",
-          height: "40px",
-          width: "70px",
-        }}
-      >
-        Botón
-      </button>
-      <button
-        type="button"
-        style={{
-          backgroundColor: "rgb(255, 245, 246)",
-          borderRadius: "10px",
-          color: "black",
-          fontWeight: "bold",
-          height: "40px",
-          width: "70px",
-        }}
-      >
-        Botón
-      </button>
-    </div>
-  );
-} */
+        <CustomTag {...tagAttributes}>{children}</CustomTag>
+      </Link>
+    );
+  }
+
+  return <CustomTag {...tagAttributes}>{children}</CustomTag>;
+}
