@@ -1,5 +1,6 @@
 import styles from "./InputButtonTitle.module.css";
 import Button from "../Button";
+import Label from "../Label";
 import Input from "../Input/index";
 
 // U de que es el parametro que ingresa el usuario
@@ -11,18 +12,33 @@ export default function InputButtonTitle({
   contentU,
 }) {
   return (
-    // Seria el placeholder y el contenido del boton ?
-    <div className={styles.inputButton}>
-      {/* <label htmlFor="title">{titleU}</label> */}
-      <Input
-        title={titleU}
-        name={nameU}
-        placeholder={placeholderU}
-      />
-      {/* Utilice el componente Boton, pero mantuve el tamaño del 
-      boton anterior, de ser necesario se cambia.
-      El tamaño actual me pareció un poco más estético.  */}
-      <Button variant="primary">{contentU}</Button>
-    </div>
+    <>
+      <div className={styles.container}>
+        <Label
+          content={titleU}
+          htmlFor={nameU}
+        />
+
+        {/* <div className="flex flex-row gap-2"> */}
+        <div className={styles.elementsContainer}>
+          <Input
+            id={nameU}
+            name=""
+            type="text"
+            title=""
+            placeholder={placeholderU}
+          />
+          <div className={styles.buttonsContainer}>
+            <Button
+              value="numero-placeholder"
+              classNames={[styles.button]}
+            >
+              {contentU}
+            </Button>
+          </div>
+        </div>
+      </div>
+      {/* Seria el placeholder y el contenido del boton ? */}
+    </>
   );
 }

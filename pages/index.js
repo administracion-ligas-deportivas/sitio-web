@@ -1,6 +1,9 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Link from "next/link";
 
 import Head from "next/head";
+import Link from "next/link";
+
 import InputButton from "../components/InputButton";
 import Footer from "../components/Footer";
 import SingleStat from "../components/Statistics";
@@ -47,15 +50,21 @@ export default function Home() {
           </Label>
           <OldInput />
           <Jugador />
-          <section
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              gap: ".5em",
-              flexWrap: "wrap",
-              padding: "1em",
-            }}
-          >
+          <section className="flex flex-wrap flex-row p-1 gap-2">
+            <Button
+              variant="accent"
+              isSpaLink
+              href="/login"
+            >
+              Iniciar sesión
+            </Button>
+            <Button
+              variant="secondary"
+              href="/signup"
+              isSpaLink
+            >
+              Regístrate
+            </Button>
             <Button variant="primary">
               <p>Primary</p>
             </Button>
@@ -114,6 +123,26 @@ export default function Home() {
           placeholder="Input"
         /> */}
         </div>
+
+        <Link
+          href="/create-team"
+          passHref
+        >
+          <a href="dummy-href"> Página: Crear Equipo </a>
+        </Link>
+        <br />
+        <Link
+          href="/gestion-equipo"
+          passHref
+        >
+          <a href="dummy-href"> Página: Gestion Equipo </a>
+        </Link>
+        <Link
+          href="/editar-perfil"
+          passHref
+        >
+          <a href="dummy-href"> Página: Editar Perfil </a>
+        </Link>
       </div>
 
       <Footer />
