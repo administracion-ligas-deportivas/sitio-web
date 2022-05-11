@@ -136,11 +136,19 @@ export default function Home() {
         >
           <a href="dummy-href"> Página: Gestion Equipo </a>
         </Link>
+        <br />
         <Link
           href="/editar-perfil"
           passHref
         >
           <a href="dummy-href"> Página: Editar Perfil </a>
+        </Link>
+        <br />
+        <Link
+          href="/create-sports-event"
+          passHref
+        >
+          <a href="dummy-href"> Página: Crear Evento Deportivo </a>
         </Link>
       </div>
 
