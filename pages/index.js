@@ -2,7 +2,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import Link from "next/link";
 
 import Head from "next/head";
-import Link from "next/link";
+// import Link from "next/link";
 
 import InputButton from "../components/InputButton";
 import Footer from "../components/Footer";
@@ -36,7 +36,6 @@ export default function Home() {
         />
       </Head>
       <Navbar />
-
       <div className="container mx-auto py-2">
         <div>
           <Label
