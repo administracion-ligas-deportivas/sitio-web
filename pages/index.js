@@ -123,6 +123,12 @@ export default function Home() {
           >
             <p>Registro de Arbitro</p>
           </Button>
+          <Button
+            variant="primary"
+            href="/estadisticas-personales"
+          >
+            <p>Estadisticas Personales</p>
+          </Button>
         </section>
         <div>
           <InputButton
