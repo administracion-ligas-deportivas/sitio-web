@@ -1,7 +1,7 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import Head from "next/head";
-import Link from "next/link";
+// import Link from "next/link";
 
 import InputButton from "../components/InputButton";
 import Footer from "../components/Footer";
@@ -49,6 +49,7 @@ export default function Home() {
           </Label>
           <OldInput />
           <Jugador />
+
           <section className="flex flex-wrap flex-row p-1 gap-2">
             <Button
               variant="accent"
@@ -90,6 +91,39 @@ export default function Home() {
             </Button>
           </section>
         </div>
+        <h1 style={{ fontSize: 20, fontWeight: "bold" }}> PANTALLAS </h1>
+        <section className="flex flex-wrap flex-row p-1 gap-2">
+          <Button
+            variant="primary"
+            href="/create-team"
+          >
+            <p>Crear Equipo</p>
+          </Button>
+          <Button
+            variant="primary"
+            href="/gestion-equipo"
+          >
+            <p>Gestion Equipo</p>
+          </Button>
+          <Button
+            variant="primary"
+            href="/editar-perfil"
+          >
+            <p>Editar Perfil</p>
+          </Button>
+          <Button
+            variant="primary"
+            href="/create-sports-event"
+          >
+            <p>Crear Evento Deportivo</p>
+          </Button>
+          <Button
+            variant="primary"
+            href="/registro-arbitro"
+          >
+            <p>Registro de Arbitro</p>
+          </Button>
+        </section>
         <div>
           <InputButton
             nameU="codigo"
@@ -122,41 +156,6 @@ export default function Home() {
           placeholder="Input"
         /> */}
         </div>
-
-        <Link
-          href="/create-team"
-          passHref
-        >
-          <a href="dummy-href"> Página: Crear Equipo </a>
-        </Link>
-        <br />
-        <Link
-          href="/gestion-equipo"
-          passHref
-        >
-          <a href="dummy-href"> Página: Gestion Equipo </a>
-        </Link>
-        <br />
-        <Link
-          href="/editar-perfil"
-          passHref
-        >
-          <a href="dummy-href"> Página: Editar Perfil </a>
-        </Link>
-        <br />
-        <Link
-          href="/create-sports-event"
-          passHref
-        >
-          <a href="dummy-href"> Página: Crear Evento Deportivo </a>
-        </Link>
-        <br />
-        <Link
-          href="/nuevo-arbitro"
-          passHref
-        >
-          <a href="dummy-href"> Página: Registro de Arbitro </a>
-        </Link>
       </div>
 
       <Footer />

@@ -11,7 +11,7 @@ import Button from "../components/Button";
 
 import styles from "../styles/nuevo-arbitro.module.css";
 
-export default function Home() {
+export default function NuevoArbitro() {
   return (
     <>
       <Head>
