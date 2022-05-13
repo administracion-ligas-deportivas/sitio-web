@@ -150,6 +150,13 @@ export default function Home() {
         >
           <a href="dummy-href"> Página: Crear Evento Deportivo </a>
         </Link>
+        <br />
+        <Link
+          href="/nuevo-arbitro"
+          passHref
+        >
+          <a href="dummy-href"> Página: Registro de Arbitro </a>
+        </Link>
       </div>
 
       <Footer />
