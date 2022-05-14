@@ -26,7 +26,7 @@ export default function Button({
     // Si inverse es verdadero, lo agrega. Si no, hace corto circuito.
     inverse && styles.inverse,
   ].join(" ");
-  /*return (
+  /* return (
     <button
       type="button"
       className={allClassNames}
@@ -37,13 +37,13 @@ export default function Button({
     </button>
   );
 }
-
+*/
   const CustomTag = isSpaLink || href ? "a" : "button";
   const attributes = {
     general: { disabled, className: allClassNames },
     anchor: { href, target, rel: "noopener noreferrer" },
     button: { type: buttonType, value },
-  };*/
+  };
 
   // Si es un componente Link de Next.js, el anchor (a) no necesita ningún
   // atributo. De no ser así y ser un enlace normal, si necesita dichos

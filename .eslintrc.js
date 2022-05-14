@@ -67,8 +67,8 @@ module.exports = {
     // https://stackoverflow.com/a/68521897/13562806
     // Trailing Comma
     "no-tabs": ["error", { allowIndentationTabs: false }],
-
     "comma-dangle": [
+      "off",
       "error",
       {
         arrays: "always-multiline",

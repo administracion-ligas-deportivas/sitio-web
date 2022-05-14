@@ -1,0 +1,7 @@
+CREATE TABLE municipio(
+  id_municipio INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  estado_id INT NOT NULL,
+  nombre VARCHAR(255) NOT NULL
+  );
+  
+  ALTER TABLE municipio ADD CONSTRAINT Fk_estado_id FOREIGN KEY (estado_id) REFERENCES estado(id_estado) ON DELETE NO ACTION ON UPDATE NO ACTION;

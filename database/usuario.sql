@@ -1,7 +1,3 @@
-CREATE DATABASE ligas_deportivas IF NOT EXISTS;
-
-USE ligas_deportivas;
-
 CREATE TABLE usuario(
   id_usuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   municipio_id INT NOT NULL,
@@ -18,6 +14,6 @@ CREATE TABLE usuario(
   numero_exterior VARCHAR(10) NOT NULL,
   numero_interior VARCHAR(10),
   hora_registro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
-
-DESCRIBE usuario;
+  );
+  
+  ALTER TABLE usuario ADD CONSTRAINT Fk_municipio_id FOREIGN KEY (municipio_id) REFERENCES municipio(id_municipio) ON DELETE NO ACTION ON UPDATE NO ACTION;
