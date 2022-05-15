@@ -1,3 +1,6 @@
+/* stylelint-disable selector-type-case */
+/* stylelint-disable block-no-empty */
+/* stylelint-disable length-zero-no-unit */
 /* stylelint-disable order/properties-alphabetical-order */
 /* stylelint-disable color-function-notation */
 
@@ -12,27 +15,33 @@
     text-align: center;
   }
 
-  .subtitlePage {
-    font-size: 1.5em;
-    font-weight: 500;
-  }
-
   .rectangle {
     padding: 40px;
     background-color: rgb(243, 246, 250);
   }
 
-  .flexContainer {
-    display: flex;
-    justify-content: space-between;
+  .tipoLiga {
+    width: 20%;
   }
 
-  .input {
-    width: 45%;
+  .numTeams {
+    width: 15%;
+  }
+
+  .fecha {
+    width: 100%;
+  }
+
+  .datos {
+    width: 30%;
+  }
+
+  .rule {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 0px) and (max-width: 679px) {
   .container {
     padding: 10px;
   }
@@ -43,22 +52,32 @@
     text-align: center;
   }
 
-  .subtitlePage {
-    font-size: 12pt;
-    font-weight: 500;
-  }
-
   .rectangle {
     padding: 40px;
     background-color: rgb(243, 246, 250);
   }
 
-  .flexContainer {
-    display: flex;
-    justify-content: space-between;
+  .rectangle Label {
+    font-size: 12pt;
   }
 
-  .input {
-    width: 45%;
+  .tipoLiga {
+    width: 35%;
+  }
+
+  .numTeams {
+    width: 60%;
+  }
+
+  .fecha {
+    width: 100%;
+  }
+
+  .datos {
+    width: 30%;
+  }
+
+  .rule {
+    width: 100%;
   }
 }
