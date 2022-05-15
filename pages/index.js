@@ -136,14 +136,57 @@ export default function Home() {
         >
           <a href="dummy-href"> Página: Gestion Equipo </a>
         </Link>
+        <br />
         <Link
           href="/editar-perfil"
           passHref
         >
           <a href="dummy-href"> Página: Editar Perfil </a>
         </Link>
+        <br />
+        <Link
+          href="/login"
+          passHref
+        >
+          <a href="dummy-href"> Página: Login </a>
+        </Link>
+        <br />
+        <Link
+          href="/signup"
+          passHref
+        >
+          <a href="dummy-href"> Página: Registro </a>
+        </Link>
+        <br />
+        <Link
+          href="/registro-estadistico"
+          passHref
+        >
+          <a href="dummy-href"> Página: Registro capturador de estadísticas </a>
+        </Link>
+        <br />
+        <Link
+          href="/gestion-torneo"
+          passHref
+        >
+          <a href="dummy-href"> Página: Gestión torneo </a>
+        </Link>
+        <br />
+        <Link
+          href="/enter-sports-event"
+          passHref
+        >
+          <a href="dummy-href"> Página: Ingreso a evento deportivo </a>
+        </Link>
+        <br />
+        <Link
+          href="/team-statistics"
+          passHref
+        >
+          <a href="dummy-href"> Página: Subir estadísticas de equipo </a>
+        </Link>
+        <br />
       </div>
-
       <Footer />
     </>
   );

@@ -39,3 +39,24 @@
   margin-right: 20px;
   width: 20px;
 }
+
+@media screen and (min-width: 0) and (max-width: 679px) {
+  .divFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .pagesContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pageName {
+    padding: 2em;
+  }
+
+  .divFooterDivIcons {
+    padding: 2em;
+  }
+}
