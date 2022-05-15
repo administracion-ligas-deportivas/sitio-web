@@ -27,10 +27,10 @@ export default function Footer() {
           className={styles.divFooterIcons}
         />
       </div>
-      <div>
+      <div className={styles.pageName}>
         <p>© Administración de Ligas Deportivas</p>
       </div>
-      <div>
+      <div className={styles.pagesContainer}>
         <Link
           href="/"
           passHref

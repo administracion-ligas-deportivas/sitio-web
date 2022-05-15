@@ -1,5 +1,9 @@
 /* stylelint-disable order/properties-alphabetical-order */
 /* stylelint-disable color-function-notation */
+.container {
+  align-items: center;
+}
+
 .titlePage {
   font-size: 3em;
   font-weight: 700;
@@ -11,7 +15,7 @@
   background-color: rgb(243, 246, 250);
   flex-direction: row-reverse;
   gap: 2em;
-  padding: 0.5em 2em 2em 2em;
+  padding: 1em 2em 2em 2em;
   margin-bottom: 2em;
 }
 
@@ -24,13 +28,17 @@
   padding-left: 2em;
 }
 
+.resultsFlexContainer {
+  background-color: rgb(243, 246, 250);
+  justify-content: space-between;
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
 .subtitlePage {
   font-size: 1.5em;
   font-weight: 500;
-}
-
-.container {
-  align-items: center;
 }
 
 .input {
@@ -44,12 +52,44 @@
   padding: 1em;
 }
 
-.codeContainer {
+.resultsContainer {
+  background-color: white;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1em 2em 2em 2em;
+  margin-top: 1em;
+}
+
+.playersContainerBig {
   background-color: rgb(243, 246, 250);
-  padding: 2em;
+  justify-content: space-between;
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.resultsContainer label {
+  margin-top: auto;
+}
+
+.observationsContainer {
+  background-color: rgb(243, 246, 250);
+  justify-content: space-between;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.observationsContainer input {
+  height: 150px;
 }
 
 @media screen and (min-width: 0) and (max-width: 679px) {
+  .resultsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
   .flexContainer {
     display: flex;
     flex-direction: column;
@@ -57,6 +97,11 @@
 
   .flexContainer .input {
     width: 100%;
+  }
+
+  .playersContainerBig {
+    display: flex;
+    flex-direction: column;
   }
 
   .playersContainer {
