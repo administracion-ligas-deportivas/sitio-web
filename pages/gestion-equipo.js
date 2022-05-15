@@ -1,24 +1,13 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Link from "next/link";
 
 import Head from "next/head";
 import styles from "../styles/GestionEquipo.module.css";
 import InputButton from "../components/InputButton";
 import Footer from "../components/Footer";
 import SingleStat from "../components/Statistics";
-import UserIcon from "../components/Icon";
-import InputButtonTitle from "../components/InputButtonTitle";
-import InputCode from "../components/InputCode";
-// import Input from "../components/Input/index";
-
-// import Image from "next/image";
-import OldInput from "../components/OldInput";
-import Input from "../components/Input";
 import Label from "../components/Label";
 import Jugador from "../components/Jugador";
-// import Image from "next/image";
 import Navbar from "../components/Navbar";
-import Button from "../components/Button";
 
 export default function GestionEquipo() {
   return (
@@ -37,7 +26,7 @@ export default function GestionEquipo() {
 
       <Navbar />
 
-      <div className="container mx-auto py-2">
+      <div className={styles.container}>
         <div>
           <div className={styles.rectangle}>
             <h1> Nombre del Equipo </h1>
@@ -69,7 +58,7 @@ export default function GestionEquipo() {
                 />
               </div>
             </div>
-            <div style={{ padding: "10px" }}>
+            <div className={styles.addIntegrante}>
               <Label> Añadir integrante </Label>
               <InputButton
                 nameU="integrante"
