@@ -8,55 +8,44 @@ import {
   faCircleUser,
 } from "@fortawesome/free-solid-svg-icons";
 
+import styles from "../styles/Navbar.module.css";
+
 function Navbar() {
   return (
-    <div
-      style={{
-        padding: 5,
-        display: "flex",
-        height: 100,
-        fontFamily: "Helvetica",
-        fontSize: 20,
-        fontWeight: "bold",
-        margin: "auto",
-      }}
-    >
+    <div className={styles.container}>
       <div>
         <FontAwesomeIcon
           icon={faCompass}
-          style={{ height: 80, marginTop: "5px", marginLeft: "5px" }}
+          className={styles.logo}
         />
       </div>
-      <div style={{ margin: "auto" }}>
+      <div className={styles.opciones}>
         <Link href="/">
-          {/* 
-            Ignorar el warning. Esto sucede porque no hay href en el anchor, pero al estar dentro del Link, no lo requiere. 
-          */}
-          <a style={{ padding: 70 }}>Ligas</a>
+          <a>Ligas</a>
         </Link>
         <Link href="/">
-          <a style={{ padding: 70 }}>Torneos</a>
+          <a>Torneos</a>
         </Link>
         <Link href="/">
-          <a style={{ padding: 70 }}>Equipo</a>
+          <a>Equipo</a>
         </Link>
         <Link href="/">
-          <a style={{ padding: 70 }}>Calendario</a>
+          <a>Calendario</a>
         </Link>
         <Link href="/">
-          <a style={{ padding: 70 }}>Estadisticas</a>
+          <a>Estadisticas</a>
         </Link>
       </div>
       <div>
         <FontAwesomeIcon
           icon={faGear}
-          style={{ height: 25, marginTop: "30px", marginRight: "30px" }}
+          className={styles.config}
         />
       </div>
       <div>
         <FontAwesomeIcon
           icon={faCircleUser}
-          style={{ height: 80, padding: "5px" }}
+          className={styles.user}
         />
       </div>
     </div>

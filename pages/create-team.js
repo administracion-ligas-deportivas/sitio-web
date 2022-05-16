@@ -30,7 +30,7 @@ export default function CrearEquipo() {
 
       <Navbar />
 
-      <div className="container mx-auto py-2">
+      <div className={styles.container}>
         <div>
           <h1 className={styles.titlePage}>Crear Equipo</h1>
           <div className={styles.rectangle}>
