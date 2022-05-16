@@ -19,17 +19,35 @@ import Jugador from "../components/Jugador";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 
+const getButtonVariants = (variant, index) => {
+  const buttons = [];
+
+  for (let i = 0; i < 2; i++) {
+    const disabled = i === 1;
+    const key = `${variant}${disabled ? "-disabled" : ""}-${index}`;
+
+    buttons.push(
+      <Button
+        variant={variant}
+        disabled={disabled}
+        key={key}
+      >
+        {`${variant}${disabled ? " disabled" : ""}`}
+      </Button>
+    );
+  }
+  return buttons;
+};
+
 export default function Home() {
   const buttonTypes = ["primary", "secondary", "accent"];
   const pages = [
     { route: "/", title: "Home" },
     { route: "/create-sports-event", title: "Crear Evento Deportivo" },
     { route: "/create-team", title: "Crear Equipo" },
-    { route: "/create-team", title: "Crear Equipo" },
     { route: "/editar-perfil", title: "Editar Perfil" },
     { route: "/enter-sports-event", title: "Ingreso a evento deportivo" },
     { route: "/estadisticas-personales", title: "Estadisticas Personales" },
-    { route: "/gestion-equipo", title: "Gestion Equipo" },
     { route: "/gestion-equipo", title: "Gestion Equipo" },
     { route: "/gestion-torneo", title: "Gestión torneo" },
     { route: "/login", title: "Iniciar sesión" },
@@ -86,23 +104,7 @@ export default function Home() {
               Regístrate
             </Button>
             {buttonTypes.map((variant, index) => {
-              const buttons = [];
-              for (let i = 0; i < 2; i++) {
-                const disabled = i === 1;
-                const key = `${variant}${
-                  disabled ? "-disabled" : ""
-                }-${index}`;
-                buttons.push(
-                  <Button
-                    variant={variant}
-                    disabled={disabled}
-                    key={key}
-                  >
-                    {`${variant}${disabled ? " disabled" : ""}`}
-                  </Button>
-                );
-              }
-
+              const buttons = getButtonVariants(variant, index);
               return buttons.map((button) => button);
             })}
           </section>
@@ -110,20 +112,16 @@ export default function Home() {
         <section className="py-3">
           <h1 className="text-xl font-bold"> PANTALLAS </h1>
           <div className="flex flex-wrap flex-row p-1 gap-2">
-            {pages.map((page) => {
-              /* const buttonVariant =
-                buttonTypes[Math.floor(Math.random() * buttonTypes.length)]; */
-              return (
-                <Button
-                  variant="accent"
-                  href={page.route}
-                  isSpaLink
-                  key={page.route}
-                >
-                  {page.title}
-                </Button>
-              );
-            })}
+            {pages.map((page) => (
+              <Button
+                variant="accent"
+                href={page.route}
+                isSpaLink
+                key={page.route}
+              >
+                {page.title}
+              </Button>
+            ))}
           </div>
         </section>
         <div>
