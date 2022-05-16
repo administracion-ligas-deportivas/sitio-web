@@ -74,7 +74,7 @@ export default function Home() {
         />
       </Head>
       <Navbar />
-      <div className="container mx-auto py-2">
+      <div className="container mx-auto p-2">
         <div>
           <Label
             htmlFor="new-input"
@@ -85,7 +85,7 @@ export default function Home() {
               placeholder="Nuevo Input"
             />
           </Label>
-          <OldInput />
+          {/* <OldInput /> */}
           <Jugador />
 
           <section className="flex flex-wrap flex-row p-1 gap-2">
@@ -125,11 +125,11 @@ export default function Home() {
           </div>
         </section>
         <div>
-          <InputButton
+          {/* <InputButton
             nameU="codigo"
             placeholderU="Ingresa"
             contentU="Registro"
-          />
+          /> */}
           <SingleStat
             pj={20}
             pg={20}
