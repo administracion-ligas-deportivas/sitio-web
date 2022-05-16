@@ -1,7 +1,6 @@
 {
   "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
   "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
-  "standard.engine": "semistandard",
   "css.lint.unknownAtRules": "ignore",
   /**
    * Desactivamos el linter nativo de Visual Studio Code para no tener errores

@@ -49,8 +49,8 @@ module.exports = {
         // https://github.com/prettier/eslint-plugin-prettier/issues/206
         // ESLint pedía "Delete ",", pero era porque faltaba la regla aquí,
         // además de en el .prettierrc.js"
-        trailingComma: "all",
-        printWidth: 80,
+        trailingComma: "es5",
+        printWidth: 79,
         tabWidth: 2,
       },
     ],
@@ -78,6 +78,7 @@ module.exports = {
         functions: "never",
       },
     ],
+    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
     // "space-before-function-paren": ["warn", "never"],
     quotes: [
       "error",
