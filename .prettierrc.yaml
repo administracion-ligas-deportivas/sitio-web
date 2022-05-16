@@ -1,7 +1,7 @@
 semi: true
 singleQuote: false
 # trailingComma: "none"
-trailingComma: "all"
+trailingComma: "es5"
 endOfLine: lf
 printWidth: 79
 eslintIntegration: true
