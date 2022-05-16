@@ -149,6 +149,7 @@ function Signup() {
             <Button
               variant="primary"
               type="submit"
+              id="LoadJson1"
             >
               <p>Registrar</p>
             </Button>
