@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import axios from "axios";
 import myimg from "../public/img-login.png";
 import styles from "../styles/LoginSignup.module.css";
 import Input from "../components/Input/index";
@@ -7,6 +8,15 @@ import Label from "../components/Label";
 import Button from "../components/Button/index";
 
 function Signup() {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("creating user");
+    const res = await axios.post("/api/usuarios", {
+      nombre: "Michoacán",
+    });
+    console.log(res);
+  };
+
   const imageClasses = [styles.container, "hidden", "sm:flex"].join(" ");
   return (
     <div className="flex flex-col justify-between h-full">
@@ -37,7 +47,7 @@ function Signup() {
             </Link>
           </nav> */}
           <Link
-            href="./login"
+            href="/login"
             passHref
           >
             <a
@@ -50,7 +60,7 @@ function Signup() {
           </Link>
           <h1 className={styles.titlePage}>Registro</h1>
           <form
-            action=""
+            onSubmit={handleSubmit}
             className={styles.formContainer}
           >
             <Label
@@ -136,9 +146,14 @@ function Signup() {
                 placeholder="Confirmar contraseña"
               />
             </Label>
-            <Button variant="primary">
+            <Button
+              variant="primary"
+              type="submit"
+              id="LoadJson1"
+            >
               <p>Registrar</p>
             </Button>
+            <button type="submit">SEND</button>
           </form>
         </main>
       </section>
