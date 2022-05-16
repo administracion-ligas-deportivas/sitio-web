@@ -26,19 +26,21 @@ export default function Button({
     // Si inverse es verdadero, lo agrega. Si no, hace corto circuito.
     inverse && styles.inverse,
   ].join(" ");
-  /* return (
-    <button
-      type="button"
-      className={allClassNames}
-      disabled={disabled}
-      value={value}
-    >
-      {children}
-    </button>
-  );
-}
-*/
-  const CustomTag = isSpaLink || href ? "a" : "button";
+
+  // Link de Single Page App, pero que no ha sido especificado en el prop, por
+  // lo que vemos si se está referenciando a una ruta dentro del mismo sitio web
+  // o no.
+  let isNotSpecifiedSpaLink = false;
+
+  if (!isSpaLink) {
+    // Si la ruta comienza con una diagonal (/) y no es la ruta API, se trata de
+    // un Link SPA. Esto solo se evalúa si no se indicó ese prop en el componente.
+    isNotSpecifiedSpaLink = href.startsWith("/") && !href.includes("/api");
+  }
+
+  const CustomTag =
+    isSpaLink || isNotSpecifiedSpaLink || href ? "a" : "button";
+
   const attributes = {
     general: { disabled, className: allClassNames },
     anchor: { href, target, rel: "noopener noreferrer" },
@@ -48,7 +50,8 @@ export default function Button({
   // Si es un componente Link de Next.js, el anchor (a) no necesita ningún
   // atributo. De no ser así y ser un enlace normal, si necesita dichos
   // atributos.
-  const isNormalLink = !isSpaLink && href;
+  const isNormalLink = !isSpaLink && !isNotSpecifiedSpaLink && href;
+
   const tagAttributes = {
     ...(CustomTag === "button" && attributes.button),
     // Si no es un Link de SPA, agregamos sus atributos.
@@ -56,7 +59,7 @@ export default function Button({
     ...attributes.general,
   };
 
-  if (isSpaLink) {
+  if (isSpaLink || isNotSpecifiedSpaLink) {
     return (
       <Link
         href={href}
