@@ -16,7 +16,7 @@ export default function Button({
   isSpaLink = false,
   href = "",
   target = "_blank",
-  buttonType = "button",
+  type = "button",
   children,
 }) {
   const allClassNames = [
@@ -44,7 +44,7 @@ export default function Button({
   const attributes = {
     general: { disabled, className: allClassNames },
     anchor: { href, target, rel: "noopener noreferrer" },
-    button: { type: buttonType, value },
+    button: { type, value },
   };
 
   // Si es un componente Link de Next.js, el anchor (a) no necesita ningún

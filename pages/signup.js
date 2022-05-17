@@ -54,8 +54,7 @@ function Signup() {
               href="dummy-href"
               className={styles.elementsContainerAnchor}
             >
-              {" "}
-              Iniciar sesión{" "}
+              Iniciar sesión
             </a>
           </Link>
           <h1 className={styles.titlePage}>Registro</h1>
@@ -106,6 +105,7 @@ function Signup() {
               >
                 <Input
                   id="user-input-pass"
+                  type="date"
                   placeholder="DD/MM/AAAA"
                 />
               </Label>
