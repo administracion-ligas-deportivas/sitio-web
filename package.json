@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -21,16 +20,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.4.0",
     "postcss": "^8.4.12",
     "postcss-sorting": "^7.0.1",
     "stylelint": "^14.7.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-order": "^5.0.0"
-  },
-  "lint-staged": {
-    "*.css": "stylelint --cache --fix"
   }
 }
