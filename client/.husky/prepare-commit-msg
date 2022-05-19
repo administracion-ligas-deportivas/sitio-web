@@ -1,5 +1,0 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-# Commitizen
-# exec < /dev/tty && npx cz --hook || true
